@@ -1,0 +1,29 @@
+<div class="form__wrapper">
+  <h1 class="page-heading">Sign up</h1>
+  <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+    <%= render "posts/error_messages", model: f.object %>
+    <div class="field">
+      <%= f.label :nickname, "Nickname" %><br />
+      <%= f.text_field :nickname, id:"user_name", class: :text_field  %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email, "Email" %><br />
+      <%= f.email_field :email, id:"user_email", class: :text_field, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password, "Password ※6文字以上" %><br />
+      <%= f.password_field :password, id:"user_password", class: :text_field, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation, "Password（再入力）" %><br />
+      <%= f.password_field :password_confirmation, id:"user_password_confirmation", class: :text_field, autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: :form__btn %>
+    </div>
+  <% end %>
+</div>
