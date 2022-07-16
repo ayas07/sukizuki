@@ -2,3 +2,13 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+      post:
+        text: テキスト
+        feeling_id: 気持ち
+        color_id: 色

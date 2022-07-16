@@ -14,12 +14,12 @@
       </div>
 
       <div class="field">
-        <%= f.label :password, "パスワード（6文字以上）" %><br />
+        <%= f.label :password, "パスワード ※6文字以上" %><br />
         <%= f.password_field :password, id:" user-password", class: "input-form", autocomplete: "new-password" %>
       </div>
 
       <div class="field">
-        <%= f.label :password_confirmation, "パスワード再入力" %><br />
+        <%= f.label :password_confirmation, "パスワード（確認用）" %><br />
         <%= f.password_field :password_confirmation, id: "user-password-confirmation", class: "input-form", autocomplete: "new-password" %>
       </div>
 

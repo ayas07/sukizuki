@@ -8,7 +8,7 @@ class Post < ApplicationRecord
 
   validates :text, presence: true
 
-  with_options numericality: { other_than: 0, message: "can't be blank" } do
+  with_options numericality: { other_than: 0, message: "を選択してください" } do
     validates :feeling_id
     validates :color_id
   end
