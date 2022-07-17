@@ -1,31 +1,29 @@
-<div class="wrapper">
-  <div class="form-wrapper">
-    <h1 class="page-heading">新規投稿</h1>
-    <%= form_with model: @post, url: posts_path, local: true do |f| %>
-      <%= render "shared/error_messages", model: f.object %>
-      <div class="field">
-        <%= f.label :image, "画像（任意）" %><br />
-        <%= f.file_field :image, class: "form-image", id: "post-image" %>
-      </div>
+<div class="form-wrapper">
+  <h1 class="page-heading">新規投稿</h1>
+  <%= form_with model: @post, url: posts_path, local: true do |f| %>
+    <%= render "shared/error_messages", model: f.object %>
+    <div class="field">
+      <%= f.label :image, "画像（任意）" %><br />
+      <%= f.file_field :image, class: "form-image", id: "post-image" %>
+    </div>
 
-      <div class="field">
-        <%= f.label :text, "テキスト" %><br />
-        <%= f.text_area :text, class: "form-text", id: "post-text" %>
-      </div>
+    <div class="field">
+      <%= f.label :text, "テキスト" %><br />
+      <%= f.text_area :text, class: "form-text", id: "post-text" %>
+    </div>
 
-      <div class="field">
-        気持ち <span class="explanation">※投稿の上部に表示されます</span><br />
-        <%= f.collection_select(:feeling_id, Feeling.all, :id, :name, {}, {class: "select-box", id: "post-feeling"}) %>
-      </div>
+    <div class="field">
+      気持ち <span class="explanation">※投稿の上部に表示されます</span><br />
+      <%= f.collection_select(:feeling_id, Feeling.all, :id, :name, {}, {class: "select-box", id: "post-feeling"}) %>
+    </div>
 
-      <div class="field">
-        色 <span class="explanation">※投稿の枠が選択した色になります</span><br />
-        <%= f.collection_select(:color_id, Color.all, :id, :name, {}, {class: "select-box", id: "post-color"}) %>
-      </div>
+    <div class="field">
+      色 <span class="explanation">※投稿の枠が選択した色になります</span><br />
+      <%= f.collection_select(:color_id, Color.all, :id, :name, {}, {class: "select-box", id: "post-color"}) %>
+    </div>
 
-      <div class="actions">
-        <%= f.submit "投稿する", class: "form-btn" %>
-      </div>
-    <% end %>
-  </div>
+    <div class="actions">
+      <%= f.submit "投稿する", class: "form-btn" %>
+    </div>
+  <% end %>
 </div>

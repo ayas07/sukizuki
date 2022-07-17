@@ -1,25 +1,25 @@
 module PostsHelper
 
   def border_color(post)
-    if post.color.id == 1
-      return "border-red"
-    elsif post.color.id == 2
-      return "border-pink"
-    elsif post.color.id == 3
-      return "border-orange"
-    elsif post.color.id == 4
-      return "border-yellow"
-    elsif post.color.id == 5
-      return "border-green"
-    elsif post.color.id == 6
-      return "border-blue"
-    elsif post.color.id == 7
-      return "border-purple"
-    elsif post.color.id == 8
-      return "border-brown"
-    elsif post.color.id == 9
-      return "border-gray"
+    if post.color_id == 1
+      "border-red"
+    elsif post.color_id == 2
+      "border-pink"
+    elsif post.color_id == 3
+      "border-orange"
+    elsif post.color_id == 4
+      "border-yellow"
+    elsif post.color_id == 5
+      "border-green"
+    elsif post.color_id == 6
+      "border-blue"
+    elsif post.color_id == 7
+      "border-purple"
+    elsif post.color_id == 8
+      "border-brown"
+    elsif post.color_id == 9
+      "border-gray"
     end
   end
-  
+
 end

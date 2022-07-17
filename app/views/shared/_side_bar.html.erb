@@ -1,70 +1,96 @@
 <div class="side-bar-content">
   <ul class="feeling-lists">
-    <li class="lists-heading">「気持ち」で投稿を探す</li>
-    <li class="feeling-list"><%= link_to "最高", "#" %></li>
-    <li class="feeling-list"><%= link_to "ヤバい", "#" %></li>
-    <li class="feeling-list"><%= link_to "尊い", "#" %></li>
-    <li class="feeling-list"><%= link_to "楽しい", "#" %></li>
-    <li class="feeling-list"><%= link_to "面白い", "#" %></li>
-    <li class="feeling-list"><%= link_to "テンション上がる", "#" %></li>
-    <li class="feeling-list"><%= link_to "癒される", "#" %></li>
-    <li class="feeling-list"><%= link_to "かわいい", "#" %></li>
-    <li class="feeling-list"><%= link_to "カッコいい", "#" %></li>
-    <li class="feeling-list"><%= link_to "キレイ", "#" %></li>
-    <li class="feeling-list"><%= link_to "選択肢じゃ表せない", "#" %></li>
+    <li class="lists-heading">
+      「気持ち」で投稿を探す
+    </li>
+    <li class="feeling-list">
+      <%= link_to "最高", '/posts/feeling/1' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "ヤバい", '/posts/feeling/2' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "尊い", '/posts/feeling/3' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "楽しい", '/posts/feeling/4' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "面白い", '/posts/feeling/5' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "テンション上がる", '/posts/feeling/6' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "癒される", '/posts/feeling/7' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "かわいい", '/posts/feeling/8' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "カッコいい", '/posts/feeling/9' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "キレイ", '/posts/feeling/10' %>
+    </li>
+    <li class="feeling-list">
+      <%= link_to "選択肢じゃ表せない", '/posts/feeling/11' %>
+    </li>
   </ul>
   <ul class="color-lists">
-    <li class="lists-heading">「色」で投稿を探す</li>
+    <li class="lists-heading">
+      「色」で投稿を探す
+    </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/1', class: "color-link" do %>
         <%= image_tag("red.png", class: "color-img") %>
         <p>レッド</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/2', class: "color-link" do %>
         <%= image_tag("pink.png", class: "color-img") %>
         <p>ピンク</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/3', class: "color-link" do %>
         <%= image_tag("orange.png", class: "color-img") %>
         <p>オレンジ</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/4', class: "color-link" do %>
         <%= image_tag("yellow.png", class: "color-img") %>
         <p>イエロー</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/5', class: "color-link" do %>
         <%= image_tag("green.png", class: "color-img") %>
         <p>グリーン</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/6', class: "color-link" do %>
         <%= image_tag("blue.png", class: "color-img") %>
         <p>ブルー</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/7', class: "color-link" do %>
         <%= image_tag("purple.png", class: "color-img") %>
         <p>パープル</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/8', class: "color-link" do %>
         <%= image_tag("brown.png", class: "color-img") %>
         <p>ブラウン</p>
       <% end %>
     </li>
     <li class="color-list">
-      <%= link_to "#", class: "color-link" do %>
+      <%= link_to '/posts/color/9', class: "color-link" do %>
         <%= image_tag("gray.png", class: "color-img") %>
         <p>グレー</p>
       <% end %>
