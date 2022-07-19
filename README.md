@@ -43,7 +43,7 @@ https://sukizuki.herokuapp.com/
 またそれに伴い、最終課題で学んだActiveHashを活用したカテゴリー別の一覧表示や、ヘルパーメソッドを用いた投稿ごとの枠の色表示など、初めて取り組む実装にも挑戦した。
 
 ## 投稿時の挙動
-[![Image from Gyazo](https://i.gyazo.com/e76a3644ff4fff8f5c4a6efcec1366cc.gif)](https://gyazo.com/e76a3644ff4fff8f5c4a6efcec1366cc)
+[![Image from Gyazo](https://i.gyazo.com/f69ea76caf80f8e6879c023541bb2ecc.gif)](https://gyazo.com/f69ea76caf80f8e6879c023541bb2ecc)
 
 # 実装予定の機能
 現在、投稿の詳細表示・編集・削除機能を実装中。
