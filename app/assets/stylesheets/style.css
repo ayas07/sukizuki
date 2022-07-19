@@ -66,7 +66,7 @@ a {
   width: 200px;
 }
 
-.nav-btn{
+.nav-btn {
   display: inline-block;
   padding: 0.6em 1.6em;
   margin-left: 15px;
@@ -79,12 +79,12 @@ a {
   transition: 0.4s ease;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
   color: #fff;
   background: #999999;
 }
 
-.nav-logout{
+.nav-logout {
   display: inline-block;
   padding: 0.6em 1.6em;
   font-size: 0.9em;
@@ -93,7 +93,7 @@ a {
   user-select: none;
 }
 
-.nav-logout:hover{
+.nav-logout:hover {
   opacity: 0.5;
 }
 
@@ -112,7 +112,7 @@ a {
 }
 
 /* メイン（投稿表示） */
-.main{
+.main {
   display: flex;
   min-height: calc(100vh - (65px + 40px));
 }
@@ -221,6 +221,10 @@ li {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+li a:hover {
+  text-decoration: underline;
+  }
 
 .feeling-list {
   margin-left: 10px;
