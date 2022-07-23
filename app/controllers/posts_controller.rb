@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :feeling, :color]
+  before_action :authenticate_user!, except: [:index, :show, :feeling, :color]
 
   def index
     @posts = Post.order("created_at DESC")
@@ -16,6 +16,10 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   def feeling

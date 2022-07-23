@@ -80,7 +80,7 @@ a {
 }
 
 .nav-btn:hover {
-  color: #fff;
+  color: #FFFFFF;
   background: #999999;
 }
 
@@ -107,7 +107,7 @@ a {
 
 .copyright {
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 12px;
 }
 
@@ -159,6 +159,29 @@ a {
 
 .post-date {
   padding-right: 15px;
+}
+
+/* メイン（詳細表示のみ） */
+.post-manage {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.post-btn {
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 1.1em;
+  color: #999999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 15px;
+}
+.post-btn:hover {
+  color: #FFFFFF;
+  background: #999999;
 }
 
 /* メイン（投稿枠の色のみ） */
@@ -301,7 +324,7 @@ li a:hover {
   margin: 20px 0 40px 0;
   font-size: 1.1em;
   letter-spacing: 2px;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   user-select: none;
   background: #999999;
