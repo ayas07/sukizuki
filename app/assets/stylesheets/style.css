@@ -167,6 +167,7 @@ a {
   justify-content: center;
   padding-top: 5px;
 }
+
 .post-btn {
   display: block;
   padding: 0.4em 1.6em;
@@ -219,6 +220,31 @@ a {
 
 .border-gray {
   border: 5px #696969 solid;
+}
+
+/* メイン（削除後表示） */
+.success-message {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.move-btn {
+  width: 170px;
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 1.0em;
+  color: #999999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 30px auto 0;
+}
+
+.move-btn:hover {
+  color: #FFFFFF;
+  background: #999999;
 }
 
 /* サイドバー */
