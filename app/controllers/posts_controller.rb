@@ -22,6 +22,11 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+  end
+
   def feeling
     @posts = Post.where(feeling_id: params[:id]).order("created_at DESC")
   end
