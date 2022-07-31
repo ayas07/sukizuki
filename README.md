@@ -46,8 +46,6 @@ https://sukizuki.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/f69ea76caf80f8e6879c023541bb2ecc.gif)](https://gyazo.com/f69ea76caf80f8e6879c023541bb2ecc)
 
 # 実装予定の機能
-現在、投稿の詳細表示・編集・削除機能を実装中。
-
 今後はマイページ機能やコメント機能、投稿検索機能を実装予定。また、スマートフォンやタブレットなど小さな端末でも見やすく実装できるよう学習を進めているところ。
 
 # データベース設計
